@@ -2,17 +2,31 @@
   "name": "api2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon --exec babel-node src/server.js"
   },
-  "author": "",
+  "keywords": [
+    "fullstack",
+    "nodejs"
+  ],
+  "author": "NhuYLuong",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "cookie-parser": "^1.4.6",
-    "express": "^4.18.2",
-    "multer": "^1.4.5-lts.1"
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.29.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.21",
+    "sequelize-cli": "^6.6.0"
   }
 }

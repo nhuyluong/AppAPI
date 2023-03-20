@@ -1,0 +1,6 @@
+# quy dinh file day len server(github)
+
+/node_modules
+/vendor
+/.idea/
+.evn
